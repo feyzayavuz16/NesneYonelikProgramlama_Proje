@@ -35,7 +35,7 @@ public void setTelefonNumarasi(int telefonNumarasi) {
 
 @Override
 public String toString(){
-	return "Ad:" + ad + "Soyad:" + soyad+ " e-mail:" + email;
+	return "Ad:" + ad + "\n Soyad:" + soyad+ "\n e-mail:" + email;
 }}
 
 

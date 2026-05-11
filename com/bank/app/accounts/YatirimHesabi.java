@@ -18,7 +18,7 @@ public void paraCek(double miktar) {
 }
 @Override
 public String toString() {
-    return "Hesap Türü:\n"+ hesapTuru + "Bakiye:\n" + bakiye;
+    return "\n Hesap Türü:"+ hesapTuru + "\n Bakiye:" + bakiye;
 } 
 
 }

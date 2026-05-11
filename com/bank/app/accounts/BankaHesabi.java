@@ -21,6 +21,6 @@ public class BankaHesabi {
 
 @Override
 public String toString() {
-    return "Bakiye:"+ bakiye +" iban: " + iban;
+    return "\n Bakiye:"+ bakiye +"\n iban: " + iban;
 }}	
 	

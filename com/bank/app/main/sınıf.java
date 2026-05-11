@@ -27,7 +27,7 @@ public class sınıf {
         System.out.println("Yeni Bakiye: " + yatirim.getBakiye());
 
         // 4. Hesaplar arasında para transferi 
-        // Not: Dokümana göre transfer vadesiz hesap üzerinden yapılmalıdır 
+      
         m1.hesapEkle("Vadesiz", 0.0);
         VadesizHesap aliciHesap = (VadesizHesap) m1.getHesaplar().get(2);
         
@@ -51,11 +51,11 @@ public class sınıf {
         // 7. Hesap silme işlemi 
         System.out.println("\n--- Hesap Silme Testi ---");
         System.out.print("Bakiye varken silme: ");
-        m1.hesapSil(vadesiz); // Uyarı vermeli 
+        m1.hesapSil(vadesiz); //  
         
         aliciHesap.setBakiye(0.0);
         System.out.print("Bakiye 0 iken silme: ");
-        m1.hesapSil(aliciHesap); // Silmeli
+        m1.hesapSil(aliciHesap); 
    System.out.println("\n---personel oluşturma----");
         // personel oluşturma
         BankaPersoneli p = new BankaPersoneli("feyza" ," yavuz" , "243@btu.edu.tr ", 05554);

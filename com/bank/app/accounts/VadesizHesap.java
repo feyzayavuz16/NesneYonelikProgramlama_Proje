@@ -23,7 +23,7 @@ public void krediKartiBorcOdeme(KrediKarti kart, double miktar) {
 }
 @Override
 public String toString() {
-	return "Hesap Türü:\n"+ hesapTuru +"Bakiye:\n" +
+	return "\n Hesap Türü:"+ hesapTuru +"\n Bakiye:" +
 this.bakiye ; 
 }
 

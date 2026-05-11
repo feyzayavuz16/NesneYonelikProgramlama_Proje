@@ -8,7 +8,7 @@ import java.util.Random;
 public class Musteri extends Kisi{
 
 	private String musteriNumarasi;
-    private ArrayList<BankaHesabi> hesaplar; // UML'de BankaHesabi tipinde
+    private ArrayList<BankaHesabi> hesaplar; 
     private ArrayList<KrediKarti> krediKartlari;
 
     public Musteri(String ad, String soyad, String email, int telefonNumarasi) {
@@ -18,7 +18,7 @@ public class Musteri extends Kisi{
         this.krediKartlari = new ArrayList<>();
     }
 
-    // Hesap türüne göre nesne oluşturma [cite: 25]
+    // Hesap türüne göre nesne oluşturma 
     public void hesapEkle(String hesapTuru, double bakiye) {
         if (hesapTuru.equalsIgnoreCase("Vadesiz")) {
             hesaplar.add(new VadesizHesap(bakiye));
@@ -29,12 +29,12 @@ public class Musteri extends Kisi{
     
     
     public void krediKartiEkle(double limit, double guncelBorc) {
-        krediKartlari.add(new KrediKarti(limit, guncelBorc)); // [cite: 26]
+        krediKartlari.add(new KrediKarti(limit, guncelBorc)); 
     }
 
     public void hesapSil(BankaHesabi hesap) {
         if (hesap.getBakiye() > 0) {
-            System.out.println("Lütfen öncelikle bakiyenizi başka bir hesaba aktarınız."); // [cite: 27]
+            System.out.println("Lütfen öncelikle bakiyenizi başka bir hesaba aktarınız."); 
         } else {
             hesaplar.remove(hesap);
         }
@@ -45,7 +45,7 @@ public class Musteri extends Kisi{
         if (kart.getGuncelBorc() == 0) {
             krediKartlari.remove(kart);
         } else {
-            System.out.println("Lütfen öncelikle borç ödemesi yapınız."); // 
+            System.out.println("Lütfen öncelikle borç ödemesi yapınız."); 
         }
     }
 

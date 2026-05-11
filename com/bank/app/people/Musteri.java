@@ -49,13 +49,16 @@ public class Musteri extends Kisi{
         }
     }
 
-    public ArrayList<BankaHesabi> getHesaplar() { return hesaplar; }
-    public ArrayList<KrediKarti> getKrediKartlari() { return krediKartlari; }
-    public String getMusteriNumarasi() { return musteriNumarasi; }
+    public ArrayList<BankaHesabi> getHesaplar() { 
+		return hesaplar; }
+    public ArrayList<KrediKarti> getKrediKartlari() {
+		return krediKartlari; }
+    public String getMusteriNumarasi() { 
+		return musteriNumarasi; }
      
     @Override
     public String toString() {
-        return "musteriNumarasi" + musteriNumarasi +" ad" + this.getAd() + "soyad" + this.getSoyad() ;
+        return "\n musteriNumarasi:" + musteriNumarasi +"\n ad" + this.getAd() + "\n soyad" + this.getSoyad() ;
     }
     
 }

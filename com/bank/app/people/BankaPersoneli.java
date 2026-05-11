@@ -19,7 +19,7 @@ public class BankaPersoneli extends Kisi {
     	return musteriler; 
     	}
 
-    @Override
+   @Override
     public String toString() {
-        return super.toString() + ", PersonelID: " + personelID;
+        return  " PersonelID: " + getPersonelID();
     }}
